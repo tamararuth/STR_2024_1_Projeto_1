@@ -1,0 +1,2 @@
+# STR_2024_1_Projeto_1
+STR_2024_1_Projeto_1
