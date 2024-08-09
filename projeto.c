@@ -4,6 +4,7 @@
 #include <semaphore.h>
 #include <unistd.h>
 #include <time.h>
+#include <locale.h>
 
 // Definindo constantes
 #define NUM_BARBEIROS 3
@@ -85,6 +86,7 @@ void* cliente(void* arg) {
 }
 
 int main() {
+    setlocale(LC_ALL, "pt_BR.UTF-8");
     srand(time(NULL));
     pthread_t t_barbeiros[NUM_BARBEIROS];
     pthread_t t_clientes[NUM_CLIENTES_POR_DIA]; // Cria mais clientes que cadeiras de espera
